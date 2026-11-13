@@ -1,0 +1,97 @@
+{
+ "name": "fiszka",
+ "version": "0.3",
+ "license": "Apache-2.0",
+ "parameters": 252194,
+ "topics": [
+  {
+   "key": "llm",
+   "name": "Language models"
+  },
+  {
+   "key": "ml",
+   "name": "Machine learning"
+  },
+  {
+   "key": "evaluation",
+   "name": "Evaluation"
+  },
+  {
+   "key": "agents",
+   "name": "Agents"
+  },
+  {
+   "key": "multimodal",
+   "name": "Multimodal"
+  },
+  {
+   "key": "security",
+   "name": "Security"
+  },
+  {
+   "key": "reinforcement-learning",
+   "name": "Reinforcement learning"
+  },
+  {
+   "key": "rag",
+   "name": "RAG & retrieval"
+  },
+  {
+   "key": "robotics",
+   "name": "Robotics"
+  },
+  {
+   "key": "hardware",
+   "name": "Hardware"
+  },
+  {
+   "key": "tooling",
+   "name": "Tooling"
+  },
+  {
+   "key": "healthcare",
+   "name": "Healthcare"
+  },
+  {
+   "key": "business",
+   "name": "Business"
+  },
+  {
+   "key": "automation",
+   "name": "Automation"
+  },
+  {
+   "key": "policy",
+   "name": "Policy & regulation"
+  },
+  {
+   "key": "open-source",
+   "name": "Open source"
+  },
+  {
+   "key": "education",
+   "name": "Education"
+  }
+ ],
+ "threshold": 0.5,
+ "max_topics": 3,
+ "min_chars": 200,
+ "embedding": {
+  "ollama_model": "embeddinggemma-2:270m",
+  "dim": 768,
+  "char_limit": 4000,
+  "document_format": "title: {title} | text: {text}"
+ },
+ "hidden_layers": [
+  256,
+  128,
+  64
+ ],
+ "architecture": "768 -> 256 -> 128 -> 64 -> 17 (ReLU) plus a linear skip 768 -> 17, sigmoid outputs",
+ "training": {
+  "texts": 9968,
+  "seed": 138,
+  "labels": "topics given by both teachers: DeepSeek V4.1 Flash 1017 and NVIDIA Nemotron 3.5 Lightning",
+  "validation": "walidacja: najnowsze 20% treningu"
+ }
+}
