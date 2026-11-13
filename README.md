@@ -18,6 +18,8 @@ out of 17 (language models, agents, security, robotics, business, policy and mor
 It is a 252,194-weight network on top of EmbeddingGemma 2 embeddings. The network itself needs a few
 microseconds per text on a CPU; computing the embedding is the slow part.
 
+![Fiszka on the lab's page: a news post about AlphaGenome 2 passes through layers 768, 256, 128 and 64 and lands on Healthcare (0.99) and Machine learning (0.77)](fiszka.jpg)
+
 Built by [Creative AI Driven PM](https://creativeaidrivenpm.com/) in [aipoc-lab](https://aipoclab.creativeaidrivenpm.com/),
 a one-person AI lab. I learn, build and test what actually works.
 Since 7 November 2026 Fiszka has tagged every new text in the lab's pipeline.
