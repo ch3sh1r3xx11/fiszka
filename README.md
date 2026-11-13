@@ -23,7 +23,8 @@ microseconds per text on a CPU; computing the embedding is the slow part.
 Built by [Creative AI Driven PM](https://creativeaidrivenpm.com/) in [aipoc-lab](https://aipoclab.creativeaidrivenpm.com/),
 a one-person AI lab. I learn, build and test what actually works.
 Since 7 November 2026 Fiszka has tagged every new text in the lab's pipeline.
-Live demo (Polish page): [aipoclab.creativeaidrivenpm.com/fiszka](https://aipoclab.creativeaidrivenpm.com/fiszka).
+Live demo: [aipoclab.creativeaidrivenpm.com/en/fiszka](https://aipoclab.creativeaidrivenpm.com/en/fiszka)
+(click a text and the network recomputes it in your browser).
 
 ## Quick start
 
