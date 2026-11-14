@@ -69,8 +69,11 @@ A paper that uses ChatGPT to grade essays is `education`, not `llm`.
 
 ## Training data and labels
 
-- 9,968 texts the lab collected between August and October 2026: mostly arXiv cs.AI abstracts,
-  plus AI company blogs and news. The texts themselves are not published.
+- 9,968 texts the lab collected between August and October 2026: 8,241 arXiv cs.AI abstracts
+  and 1,727 AI company blog posts and news articles.
+- The whole training set is public: [aipoc-lab/fiszka-dataset](https://huggingface.co/datasets/aipoc-lab/fiszka-dataset)
+  (arXiv titles and abstracts, titles and links of web articles, both teachers' answers, the vectors).
+  `python train.py --data fiszka-dataset --out my-fiszka` (numpy + PyTorch, CPU) reproduces these weights exactly.
 - Labels come from two open-weight language models acting as teachers: DeepSeek V4.1 Flash 1017 (MIT)
   and NVIDIA Nemotron 3.5 Lightning (OpenMDW 1.1). A topic is a label only when **both** gave it.
   No labels from closed models were used.
