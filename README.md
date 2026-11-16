@@ -25,6 +25,7 @@ a one-person AI lab. I learn, build and test what actually works.
 Since 7 November 2026 Fiszka has tagged every new text in the lab's pipeline.
 Live demo: [aipoclab.creativeaidrivenpm.com/en/fiszka](https://aipoclab.creativeaidrivenpm.com/en/fiszka)
 (click a text and the network recomputes it in your browser).
+Project page: [ch3sh1r3xx11.github.io/fiszka](https://ch3sh1r3xx11.github.io/fiszka/).
 
 ## Quick start
 
